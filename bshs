@@ -1,0 +1,5 @@
+/upload-produk
+│── index.php
+│── upload.php
+│── koneksi.php
+│── /uploads
