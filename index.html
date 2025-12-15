@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemeriksa Kesehatan Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏥 Pemeriksa Kesehatan (BMI Sederhana)</h1>
+        <p class="disclaimer">
+            *DISCLAIMER: Ini BUKAN alat diagnosis medis. Selalu konsultasikan dengan dokter.
+        </p>
+
+        <label for="berat">Berat Badan (kg):</label>
+        <input type="number" id="berat" placeholder="Contoh: 70" min="1" required>
+
+        <label for="tinggi">Tinggi Badan (cm):</label>
+        <input type="number" id="tinggi" placeholder="Contoh: 175" min="1" required>
+
+        <button onclick="hitungBMI()">Hitung BMI</button>
+
+        <div class="hasil">
+            <h2>Hasil:</h2>
+            <p id="hasilBMI">Masukkan data dan klik Hitung.</p>
+            <p id="kategoriBMI" class="kategori"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
